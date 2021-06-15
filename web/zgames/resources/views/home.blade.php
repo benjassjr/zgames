@@ -16,10 +16,6 @@
                     <div class="mb-3">
                         <label for="marca-select" class="form-label">Marca</label>
                         <select  id="marca-select" class="form-select">
-                            <option value="Microsoft">Microsoft</option>
-                            <option value="Sony">Sony</option>
-                            <option value="Nintendo">Nintendo</option>
-                            <option value="Sega">Sega</option>
                         </select>
                     </div>
                     <div class="mb-3">
@@ -33,4 +29,7 @@
             </div>
         </div>
     </div>
+@endsection
+@section("javascript")
+    <script src="{{asset('js/home.js')}}"></script>
 @endsection
