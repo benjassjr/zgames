@@ -13,7 +13,10 @@ const cargarMarcas = async()=>{
     //Cargar las marcas dentro del select
 };
 
-cargarMarcas();
+document.addEventListener("DOMContentLoaded", ()=>{
+    cargarMarcas();
+});
+
 document.querySelector("#registrar-btn").addEventListener("click", async()=>{
     let nombre = document.querySelector("#nombre-txt").value;
     let marca = document.querySelector("#marca-select").value;
@@ -24,5 +27,6 @@ document.querySelector("#registrar-btn").addEventListener("click", async()=>{
     consola.anio = anio;
     
     let res = await crearConsola(consola);
-    Swal.fire("Consola Creada", "Consola creada exitosamente", "info");
+    await Swal.fire("Consola Creada", "Consola creada exitosamente", "info");
+    window.location.href  = "ver_consolas";
 });
