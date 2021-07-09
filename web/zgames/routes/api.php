@@ -23,7 +23,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get("marcas/get", [ConsolasController::class, "getMarcas"]);
 
 Route::get("consolas/get", [ConsolasController::class, "getConsolas"]);
+Route::get("consolas/filtrar", [ConsolasController::class, "filtrarConsola"]);
+
 
 Route::post("consolas/post", [ConsolasController::class, "crearConsola"]);
-
 Route::post("consolas/delete", [ConsolasController::class, "eliminarConsola"]);

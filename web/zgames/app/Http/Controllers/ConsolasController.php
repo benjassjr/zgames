@@ -21,6 +21,13 @@ class ConsolasController extends Controller
         return $consolas;
     }
 
+    public function filtrarConsola(Request $request){
+        $input = $request->all();
+        $filtro = $input["filtro"];
+        $consolas = Consola::where("marca", $filtro)->get();
+        return $consolas;
+    }
+
     public function crearConsola(Request $request){
         $input = $request->all();
         $consola = new Consola();

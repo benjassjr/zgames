@@ -2,7 +2,7 @@
 
 @section("contenido")
 
-    <div class="row">
+    <div class="row mt-5">
         <div class="col-12 col-md-6 col-lg-5 mx-auto">
             <div class="card">
                 <div class="cardheader bg-warning text-white">
@@ -32,5 +32,6 @@
 @endsection
 @section("javascript")
     <script src="{{asset('js/servicios/consolasService.js')}}"></script>
+    <script src="{{asset('js/servicios/marcasService.js')}}"></script>
     <script src="{{asset('js/home.js')}}"></script>
 @endsection
